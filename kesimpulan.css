@@ -1,0 +1,129 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+   background-image:url(vintage.png);
+   background-size: cover;
+}
+
+
+header .header-img {
+    width: 100%;
+    height: auto;
+    max-height: 250px; /* Controls the height of the header image */
+}
+
+
+/* Navigation Bar Styles */
+nav {
+    background-color:rgb(244, 167, 122);
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: inline-flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+    position: relative;
+    height: 60px;
+    padding: 10px 8px;
+}
+
+nav ul li a {
+    padding: 1px 0px;
+    text-align: center;
+    border: 0px;
+    transition: 0.3s;
+}
+
+nav ul li a img {
+    border: dashed 4px rgba(67, 67, 104, 0.518);
+    border-radius: 7px;
+}
+
+nav ul li a:hover {
+    background-color:rgb(250, 223, 165);
+}
+
+nav ul li a:active {
+    color: blue;
+}
+
+/* Dropdown Menu */
+nav ul li.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+nav ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:rgb(255, 240, 155);
+    min-width: 160px;
+    height: 150px;
+    width: auto;
+    z-index: 1;
+    margin: 3px 3px 0px 0px;
+}
+
+nav ul li .dropdown-content a {
+    padding: 20px 20px;
+}
+
+nav ul li .dropdown-content a:hover {
+    background-color:rgb(227, 199, 121);
+}
+
+/* Main Content Styles */
+.content {
+    padding: 20px;
+    text-align: justify;
+}
+
+.content h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.content p {
+    font-size: 1.2em;
+    font-family:'Times New Roman', Times, serif;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    background-color:rgb(255, 228, 164);
+    color: rgb(0, 0, 0);
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer .footer-img {
+    width: 100%;
+    height: auto;
+    max-height: 150px; /* Controls the height of the footer image */
+}
+
+footer p {
+    margin-top: 10px;
+}
+
+article {
+    margin-bottom: 10px;
+    background-color: rgb(230, 207, 181);
+}
+
